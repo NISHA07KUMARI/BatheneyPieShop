@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <section id="nisha" class="card">
+    <h1>Nisha</h1>
+    <ul>
+        <li><a href="https://twitter.com/" class="tag"> </a>Twitter </li>
+        <li><a href="https://github.com/" class="tag"></a> Github </li>
+    </ul>
+    </section>
+    <section id="alok" class="card">
+    <h1>Alok</h1>
+    <ul>
+        <li><a href="https://twitter.com/" class="tag"></a> Twitter </li>
+        <li><a href="https://github.com/" class="tag"></a> Github </li>
+    </ul>
+    </section>
+</body>
+
+<script>
+// let links= document.querySelector(".tag");
+// console.log(links);
+// links.forEach(function(link){
+//     link.setAtrribute("target","_blank");
+// });
+
+window.addEventListener("DOMContentLoader",function(e){
+    console.log("The page is loaded");
+});
+
+window.onload = function() {
+  console.log("inside onload");
+  let links= document.querySelector(".tag");
+ console.log(links);
+ //link.setAtrribute("target","_blank");
+ links.forEach(function(link){
+    link.setAtrribute("target","_blank");
+ });
+  
+};
+
+</script>
+</html>
